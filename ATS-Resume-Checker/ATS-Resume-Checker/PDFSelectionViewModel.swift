@@ -33,5 +33,4 @@ final class PDFSelectionViewModel: ObservableObject {
             viewState = .failure(error.localizedDescription)
         }
     }
-    
 }
