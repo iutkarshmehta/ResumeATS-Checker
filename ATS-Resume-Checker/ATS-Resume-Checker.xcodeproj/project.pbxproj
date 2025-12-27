@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		12600A192F0072390064DCF6 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 12600A182F0072390064DCF6 /* GoogleGenerativeAI */; };
+		12600A1C2F00761B0064DCF6 /* .swiftlint.yml in Sources */ = {isa = PBXBuildFile; fileRef = 12600A1B2F00760B0064DCF6 /* .swiftlint.yml */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		125E6DA22EFD3C71004CE9E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,7 @@
 		125E6D942EFD3C6F004CE9E3 /* ATS-Resume-Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ATS-Resume-Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		125E6DA12EFD3C71004CE9E3 /* ATS-Resume-CheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ATS-Resume-CheckerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		125E6DAB2EFD3C71004CE9E3 /* ATS-Resume-CheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ATS-Resume-CheckerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12600A1B2F00760B0064DCF6 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12600A192F0072390064DCF6 /* GoogleGenerativeAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +82,7 @@
 		125E6D8B2EFD3C6F004CE9E3 = {
 			isa = PBXGroup;
 			children = (
+				12600A1B2F00760B0064DCF6 /* .swiftlint.yml */,
 				125E6D962EFD3C6F004CE9E3 /* ATS-Resume-Checker */,
 				125E6DA42EFD3C71004CE9E3 /* ATS-Resume-CheckerTests */,
 				125E6DAE2EFD3C71004CE9E3 /* ATS-Resume-CheckerUITests */,
@@ -112,6 +120,7 @@
 			);
 			name = "ATS-Resume-Checker";
 			packageProductDependencies = (
+				12600A182F0072390064DCF6 /* GoogleGenerativeAI */,
 			);
 			productName = "ATS-Resume-Checker";
 			productReference = 125E6D942EFD3C6F004CE9E3 /* ATS-Resume-Checker.app */;
@@ -195,6 +204,10 @@
 			);
 			mainGroup = 125E6D8B2EFD3C6F004CE9E3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				12600A172F0072380064DCF6 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+				12600A1A2F00732A0064DCF6 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 125E6D952EFD3C6F004CE9E3 /* Products */;
 			projectDirPath = "";
@@ -236,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12600A1C2F00761B0064DCF6 /* .swiftlint.yml in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +586,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		12600A172F0072380064DCF6 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
+		12600A1A2F00732A0064DCF6 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.62.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		12600A182F0072390064DCF6 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12600A172F0072380064DCF6 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 125E6D8C2EFD3C6F004CE9E3 /* Project object */;
 }
